@@ -46,3 +46,8 @@ docker ps
 ```
 docker logs [containerName]
 ```
+
+## Tools / Dependencies using
+1. Nest.js
+2. Docker
+3. Prisma
