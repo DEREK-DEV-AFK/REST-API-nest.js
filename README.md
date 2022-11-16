@@ -30,3 +30,19 @@ $ npm run test:e2e
 # test coverage
 $ npm run test:cov
 ```
+
+## Docker Helper commands
+### To Start database
+`-d` for background
+```
+docker compose up dev-db -d
+```
+### To get list of container running
+```
+docker ps
+```
+
+### To see the logs of specific container
+```
+docker logs [containerName]
+```
