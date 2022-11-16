@@ -1,4 +1,4 @@
-import { Controller, Post } from "@nestjs/common";
+import { Body, Controller, Post } from "@nestjs/common";
 import { AuthService } from "./auth.service";
 
 @Controller('auth') // globel prifix route
@@ -8,7 +8,10 @@ export class AuthController {
 
     // POST /auth/signup
     @Post('signup') // route from which thsi function will be called
-    signup() {
+    signup(@Body() dto: any) {
+        console.log({
+            dto
+        })
         return this.authService.signup();
     }
 
