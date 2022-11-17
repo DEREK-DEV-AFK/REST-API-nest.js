@@ -67,6 +67,13 @@ npx prisma studio
 ```
 
 ## Tools / Dependencies using
-1. Nest.js
-2. Docker
-3. Prisma
+1. Nest.js - 
+    - Config - for getting .env variables throught it
+    - Class validator - validate inputs
+    - passport - 
+    - jwt - 
+    - development: 
+        - `@types/passport-jwt` - 
+2. Docker - for database
+3. Prisma - for structure database and inereaction
+4. Argon - for hashing password and validating it
